@@ -1,0 +1,174 @@
+/*Author: Alex Frey
+        Date: 10/19/2014
+        Project: stylesheet.css
+    */
+
+    /*CSS reset*/
+    body, header, nav, main, footer, h1, h2, div, img {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    /*Style rule for the body*/
+    body {
+        background: linear-gradient(to bottom right, #b4b4b4, #3c3c3c);
+    }
+
+    /*Style rule for header and h1*/
+    header, h1 {
+        text-shadow: 5px 5px 8px #3c3c3c;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50pt;
+        font-weight: bolder;
+        font-style: normal;
+        text-align: center;
+        color: black;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 0%;
+    }
+
+    /*Style rule for container*/
+    #container {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /*Style rule for h2*/
+    h2 {
+        text-shadow: 5px 5px 8px #3c3c3c;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30pt;
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+        color: black;
+    }
+
+    /*Style rule for nav*/
+    nav a:hover{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16pt;
+        font-weight: lighter;
+        font-style: italic;
+        text-align: left;
+        color: black;
+    }
+
+    /*Style rule for footer*/
+    footer {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12pt;
+        font-weight: lighter;
+        font-style: italic;
+        text-align: right;
+        color: black;
+    }
+
+    /*Style rule for main*/
+    main {
+        display: inline-block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: solid 10px black;
+        border-style: double;
+        padding: 25%;
+        box-shadow: black;
+        margin: 6px;
+        text-align: justify;
+        font-size: 18pt;
+    }
+
+    /*Style rule for homepageintro*/
+    #homepageintro {
+        display: inline-block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24pt;
+        border: solid 8px black;
+        border-style: solid;
+        padding: 8%;
+        box-shadow: darkgrey;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /*Style rule for grid*/
+    .grid {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        font-size: 18pt;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 200px 400px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-gap: 10px 10px;
+    }
+
+    /*Style rule for examples*/
+    #examples {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        font-size: 18pt;    
+    }
+
+    li:nth-child(1) {
+        border-top: none;
+        color: blue;
+    }
+
+    /*Style rule for topindustries*/
+    #topindustries {
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18pt; 
+    }
+
+    /*Style rule for advancements*/
+    #advancements {
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18pt;
+    }
+
+    /*Style rule for introduction*/
+    #introduction {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        font-size: 18pt;
+    }
+
+    /*Media query for desktop viewport*/
+
+    @media screen and (min-width: 769px) {
+        .column{
+            width: 100%;
+        }
+        
+    }
+
+    /*Media query for mobile viewport*/
+
+    @media screen and (min-width : 481px) 
+    {
+        .column {
+            width: 100%;
+        }
+        
+    }
+    
+      .row {
+        display: flex;
+      }
+      
+      .column {
+        flex: 50%;
+      }
+
+      .grid-container {
+        display: inline-grid;
+        column-gap: 50px;
+        row-gap: 10px
+      }
